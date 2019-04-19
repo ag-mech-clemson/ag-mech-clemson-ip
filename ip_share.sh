@@ -6,14 +6,11 @@
 sleep 1m
 
 #Open repo and get upates, stashing any uncommitted changes
-cd /home/pi/ag-mech-clemson/
+cd /home/pi/ag-mech-clemson-ip/
 git add *
 git stash
 git fetch --all
 git reset --hard origin/master
-
-#Move to ssh folder
-cd ssh
 
 #Write IP address and timestamp to repo and push update
 ifconfig wlan0 | grep "inet " | awk -F'[: ]+' '{ print $3 }' > ip_address
