@@ -5,7 +5,7 @@
 #Set USER to username on the rpi
 USER="pi"
 #Set REPO to the path to the git repo
-REPO=ag-mech-clemson/
+REPO=ag-mech-clemson-ip/
 
 #Navigate to Git repo, pull updates, and connect to the latest ip address
 cd $REPO
