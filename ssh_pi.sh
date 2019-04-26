@@ -11,5 +11,5 @@ REPO=./
 cd $REPO
 git pull
 echo "connecting to $USER@$(cat ssh/ip_address)"
-ssh $USER@$(cat ssh/ip_address)
+ssh $USER@$(cat ip_address)
 
