@@ -10,6 +10,6 @@ REPO=./
 #Navigate to Git repo, pull updates, and connect to the latest ip address
 cd $REPO
 git pull
-echo "connecting to $USER@$(cat ssh/ip_address)"
+echo "connecting to $USER@$(cat ip_address)"
 ssh $USER@$(cat ip_address)
 
